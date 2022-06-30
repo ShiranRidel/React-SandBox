@@ -30,8 +30,8 @@ function CustomHookExample2() {
         </button>
       </form>
       <hr />
-      {tasks.map((task) => (
-        <h3 key={task.date}>{task.task}</h3>
+      {tasks.map((task,index) => (
+        <h3 key={index}>{task.task}</h3>
       ))}
     </>
   );
